@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+  --Font-size: 16px;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: var(--Light-Gray);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0;
+  font-weight: 600;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+main {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+main header {
+  grid-column: 1/3;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px 10px 0 0;
+  font-size: 0.9rem;
+}
+
+main header h1 {
+  color: var(--Cyan);
+  margin-bottom: 20px;
+}
+main header h2 {
+  color: var(--Bright-Yellow);
+}
+
+main header p {
+  color: var(--Grayish-Blue);
+  margin-top: 20px;
+  width: 560px;
+  line-height: 1.5;
+}
+
+.price {
+  background-color: var(--Cyan);
+  height: 250px;
+  padding: 30px;
+  border-radius: 0 0 0 10px;
+  width: 340px;
+  font-size: 0.9rem;
+}
+
+.price h3 {
+  color: var(--Light-Gray);
+  margin-bottom: 10px;
+}
+
+.price p {
+  color: var(--Light-Gray);
+  padding: 10px 0;
+}
+
+.btn {
+  color: var(--Light-Gray);
+  background-color: var(--Bright-Yellow);
+  padding: 15px 15px;
+  width: 240px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: 800;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.span-p {
+  color: var(--Light-Gray);
+  opacity: 0.7;
+}
+
+article {
+  background-color: rgb(101, 196, 196);
+  padding: 30px;
+  height: 250px;
+  border-radius: 0 0 10px 0;
+}
+
+article h3 {
+  color: white;
+  margin: 10px 0 15px;
+}
+
+article p {
+  width: 75%;
+  line-height: 1.5;
+  color: var(--Light-Gray);
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 720px) {
+  body {
+    min-height: 130vh;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    max-height: 800px;
+    width: 340px;
+    font-size: 0.9rem;
+  }
+
+  main header {
+    height: 250px;
+    width: 340px;
+    font-size: 0.8rem;
+    border-radius: 10px 10px 0 0;
+  }
+
+  main header p {
+    width: 90%;
+  }
+  main header h1 h2 {
+    font-size: 0.9rem;
+  }
+
+  main .price {
+    border-radius: 0;
+  }
+
+  .main article {
+    border-radius: 0 0 10px 10px;
+  }
+}
